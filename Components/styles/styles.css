@@ -102,7 +102,7 @@ img {
   color: var(--color-white);
 }
 
-/* =====================NAVBAR ==========*/
+/* ===================== NAVBAR ====================*/
 nav {
   background: transparent;
   width: 100vw;
@@ -113,11 +113,11 @@ nav {
 }
 
 /* Change navbar styles on scroll using javascript */
-.window-scroll{
+.window-scroll {
   /* background: var(--color-primary); */
-  -webkit-backdrop-filter: blur(80px);
-  backdrop-filter: blur(8px);
-  box-sizing: 0 1rem 2rem rgba(0,0,0,0.2);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-sizing: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 .nav__container {
   height: 100%;
@@ -145,7 +145,7 @@ nav button {
   color: var(--color-bg2);
 }
 
-/* ===================== HEADER ==========*/
+/* ===================== HEADER =====================*/
 
 header {
   position: relative;
@@ -166,7 +166,7 @@ header {
   margin: 1rem 0 2.4rem;
 }
 
-/* ===================== CATEGORIES====================*/
+/* ===================== CATEGORIES ====================*/
 
 .categories {
   background: var(--color-bg1);
@@ -204,13 +204,13 @@ header {
 .category:nth-child(2) .category__icon {
   background: var(--color-danger);
 }
-.category:nth-child(3) .category__icon{
+.category:nth-child(3) .category__icon {
   background: var(--color-success);
 }
-.category:nth-child(4) .category__icon{
+.category:nth-child(4) .category__icon {
   background: var(--color-warning);
 }
-.category:nth-child(5) .category__icon{
+.category:nth-child(5) .category__icon {
   background: var(--color-success);
 }
 .category__icon {
@@ -226,3 +226,35 @@ header {
 .category p {
   font-size: 0.85rem;
 }
+/* ===================== POPULAR COURSES ====================*/
+
+.courses{
+  margin-top: 10rem;
+}
+
+.courses__container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+
+}
+.course{
+  background: var(--color-bg1);
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+.course:hover{
+  background: transparent;
+  border-color: var(--color-primary);
+}
+.course__info{
+  padding: 2rem;
+}
+
+.course_info p{
+  margin: 1.2rem 0 2rem;
+  font-size: 0.9rem;
+
+}
+/* ===================== FAQ ====================*/
