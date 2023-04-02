@@ -114,7 +114,9 @@ nav {
 
 /* Change navbar styles on scroll using javascript */
 .window-scroll{
-  background: var(--color-primary);
+  /* background: var(--color-primary); */
+  -webkit-backdrop-filter: blur(80px);
+  backdrop-filter: blur(8px);
   box-sizing: 0 1rem 2rem rgba(0,0,0,0.2);
 }
 .nav__container {
